@@ -17,6 +17,7 @@ import javax.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import restful.dto.UserDTO;
+import restful.entities.JWTToken;
 import restful.security.jwt.JWTFilter;
 import restful.security.jwt.TokenProvider;
 
@@ -55,27 +56,10 @@ public class AuthenticationRestController {
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.add(JWTFilter.AUTHORIZATION_HEADER, "Bearer " + jwt);
 
-        return new ResponseEntity<>(new JWTToken(jwt), httpHeaders, HttpStatus.OK);
+        return new ResponseEntity<>(new JWTToken(jwt,"Successfully",200,loginDto.getUsername()), httpHeaders, HttpStatus.OK);
    }
 
    /**
     * Object to return as body in JWT Authentication.
     */
-   static class JWTToken {
-
-      private String idToken;
-
-      JWTToken(String idToken) {
-         this.idToken = idToken;
-      }
-
-      @JsonProperty("id_token")
-      String getIdToken() {
-         return idToken;
-      }
-
-      void setIdToken(String idToken) {
-         this.idToken = idToken;
-      }
    }
-}

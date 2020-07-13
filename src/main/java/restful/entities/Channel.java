@@ -21,7 +21,7 @@ public class Channel {
     
     @Field
     @Size(max = 10)
-    private String channelID;
+    private String channelId;
     
     @Field
     @Size(max = 200)
@@ -58,7 +58,7 @@ public class Channel {
     @Size(max = 1000)
     private String description;
     
-    @DBRef
+    @DBRef 
     private Set<User> assignTo = new HashSet<>();
     
     @DBRef
@@ -72,12 +72,12 @@ public class Channel {
         this.id = id;
     }
 
-    public String getChannelID() {
-        return channelID;
+    public String getChannelId() {
+        return channelId;
     }
 
-    public void setChannelID(String channelID) {
-        this.channelID = channelID;
+    public void setChannelId(String channelId) {
+        this.channelId = channelId;
     }
 
     public String getName() {

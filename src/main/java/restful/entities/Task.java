@@ -22,11 +22,15 @@ public class Task {
     
     @Field
     @Size(max = 10)
-    private String taskID;
+    private String taskId;
     
     @Field
     @Size(max = 120)
     private String name;
+    
+    @Field
+    @Size(max = 120)
+    private String type;
     
     @DBRef
     private User createdBy;
@@ -39,7 +43,7 @@ public class Task {
     private Date dueDate;
     
     @Field
-    private String updatedDate;
+    private Date updatedDate;
     
     @Field
     @Size(max = 1000)
@@ -52,10 +56,9 @@ public class Task {
     
     @Field
     @Size(max = 30)
-    private String status;
+    private String status="Not Started";
     
     @Field
-    @Size(max = 30)
     private double completePercent;
     
      //Priority
@@ -76,12 +79,12 @@ public class Task {
         this.id = id;
     }
 
-    public String getTaskID() {
-        return taskID;
+    public String getTaskId() {
+        return taskId;
     }
 
-    public void setTaskID(String taskID) {
-        this.taskID = taskID;
+    public void setTaskId(String taskId) {
+        this.taskId = taskId;
     }
 
     public String getName() {
@@ -116,11 +119,11 @@ public class Task {
         this.dueDate = dueDate;
     }
 
-    public String getUpdatedDate() {
+    public Date getUpdatedDate() {
         return updatedDate;
     }
 
-    public void setUpdatedDate(String updatedDate) {
+    public void setUpdatedDate(Date updatedDate) {
         this.updatedDate = updatedDate;
     }
 
@@ -178,6 +181,14 @@ public class Task {
 
     public void setWork(Set<Work> work) {
         this.work = work;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
     
     

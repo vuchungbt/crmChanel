@@ -1,15 +1,11 @@
 package restful.dto;
-
-import java.util.HashSet;
-import java.util.Set;
-
 /**
  *
  * developer VuChung
  */
 public class ChannelDTO {
     
-    private String channelID;
+    private String channelId;
 
     private String name;
     
@@ -17,24 +13,26 @@ public class ChannelDTO {
    
     private String category;
 
-    private String createdBy;
-
     private String modifiedBy;
 
-    private String owner;
-    
     private String description;
-
-    private Set<String> assignTo = new HashSet<>();
     
-    private Set<String> task = new HashSet<>();
+     private String assign;
 
-    public String getChannelID() {
-        return channelID;
+    public String getAssign() {
+        return assign;
     }
 
-    public void setChannelID(String channelID) {
-        this.channelID = channelID;
+    public void setAssign(String assign) {
+        this.assign = assign;
+    }
+
+    public String getChannelId() {
+        return channelId;
+    }
+
+    public void setChannelId(String channelId) {
+        this.channelId = channelId;
     }
 
     public String getName() {
@@ -61,28 +59,12 @@ public class ChannelDTO {
         this.category = category;
     }
 
-    public String getCreatedBy() {
-        return createdBy;
-    }
-
-    public void setCreatedBy(String createdBy) {
-        this.createdBy = createdBy;
-    }
-
     public String getModifiedBy() {
         return modifiedBy;
     }
 
     public void setModifiedBy(String modifiedBy) {
         this.modifiedBy = modifiedBy;
-    }
-
-    public String getOwner() {
-        return owner;
-    }
-
-    public void setOwner(String owner) {
-        this.owner = owner;
     }
 
     public String getDescription() {
@@ -92,22 +74,4 @@ public class ChannelDTO {
     public void setDescription(String description) {
         this.description = description;
     }
-
-    public Set<String> getAssignTo() {
-        return assignTo;
-    }
-
-    public void setAssignTo(Set<String> assignTo) {
-        this.assignTo = assignTo;
-    }
-
-    public Set<String> getTask() {
-        return task;
-    }
-
-    public void setTask(Set<String> task) {
-        this.task = task;
-    }
-
-    
 }

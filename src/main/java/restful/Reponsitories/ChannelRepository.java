@@ -13,11 +13,14 @@ import restful.entities.Channel;
 @Repository
 public interface ChannelRepository extends MongoRepository<Channel, String>  {
     
-    @Override
-    @Query(value="{ 'createdBy.id' : ?0 ,'owner.id' : ?1,'assignTo.id' : ?2 ,'task.id' : ?3  }")        
+    @Override     
     List<Channel> findAll();
     
+    @Query(value="{ 'assignTo.id' : ?0 }")
+    List<Channel> findByAssignTo(String assignTo);
+    
     Channel findOneById(String id);
+    Channel findByChannelId(String channelId);
     //List<Channel> findByAssignTo(String assignTo);
     //List<Channel> findByCategory(String category);
 

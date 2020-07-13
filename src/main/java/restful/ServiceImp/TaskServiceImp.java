@@ -22,6 +22,7 @@ public class TaskServiceImp implements TaskService{
     public List<Task> findAll() {
         return taskRepository.findAll();
     }
+   
 
     @Override
     public Task findById(String id) {
@@ -33,4 +34,12 @@ public class TaskServiceImp implements TaskService{
         taskRepository.save(task);
     }
 
+    @Override
+    public Task findByTaskId(String taskId) {
+        return taskRepository.findByTaskId(taskId);
+    }
+    @Override
+    public long count(){
+        return taskRepository.count();
+    }
 }

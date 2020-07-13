@@ -12,7 +12,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 //import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.web.filter.CorsFilter;
-import restful.Reponsitories.ChannelRepository;
 import restful.security.JwtAccessDeniedHandler;
 import restful.security.JwtAuthenticationEntryPoint;
 import restful.security.jwt.JWTConfigurer;
@@ -100,9 +99,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
          .and()
          .authorizeRequests()
           .antMatchers("/api/register").permitAll()
+              .antMatchers("/login").permitAll()
+              .antMatchers("/default").permitAll()
+              .antMatchers("/task").permitAll()
               .antMatchers("/api/alluser").permitAll()
               .antMatchers("/api/user/*").permitAll()
               .antMatchers("/api/channel/*").permitAll()
+              .antMatchers("/api/task/*").permitAll()
+              .antMatchers("/api/work/*").permitAll()
               .antMatchers("/api/auth").permitAll()
               .antMatchers("/api/authenticate").permitAll()
          // .antMatchers("/api/register").permitAll()
@@ -110,9 +114,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
          // .antMatchers("/api/account/reset-password/init").permitAll()
          // .antMatchers("/api/account/reset-password/finish").permitAll()
               
-         .antMatchers("/api/me").hasAnyAuthority("ROLE_USER","ROLE_ADMIN","ROLE_ADMIN")
-         .antMatchers("/api/mod").hasAnyAuthority("ROLE_USER","ROLE_ADMIN")
+         .antMatchers("/api/me").hasAnyAuthority("ROLE_USER","ROLE_MOD","ROLE_ADMIN")
+         .antMatchers("/api/mod").hasAnyAuthority("ROLE_USER","ROLE_MOD")
          .antMatchers("/api/hiddenmessage").hasAuthority("ROLE_ADMIN")
+         .antMatchers("/api/channel/insert").hasAnyAuthority("ROLE_MOD","ROLE_ADMIN")
 
          .anyRequest().authenticated()
 

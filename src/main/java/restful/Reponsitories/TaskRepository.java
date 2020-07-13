@@ -13,5 +13,5 @@ public interface TaskRepository extends MongoRepository<Task, String>   {
     @Override
     List<Task> findAll();
     Task findOneById(String id);
-
+    Task findByTaskId(String taskId);
 }

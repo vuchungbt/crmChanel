@@ -35,4 +35,16 @@ public class ChannelServiceImp implements ChannelService {
         channelRepository.save(channel);
     }
 
+    @Override
+    public List<Channel> findByAssignTo(String assignTo) {
+        //System.out.println("ServiceImp"+assignTo);
+        return channelRepository.findByAssignTo(assignTo);
+    }
+
+    @Override
+    public Channel findByChannelId(String channelId) {
+        return channelRepository.findByChannelId(channelId);
+    }
+
+
 }

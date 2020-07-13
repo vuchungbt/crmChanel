@@ -1,10 +1,9 @@
 
 $(function () {
-   // VARIABLES =============================================================
+   // VARIABLES =========================
    var TOKEN_KEY = "jwtToken";
-   var $notLoggedIn = $("#notLoggedIn");
-
-   // FUNCTIONS =============================================================
+   var $logout = $("#logout");
+   // FUNCTIONS =========================
    function getJwtToken() {
       return localStorage.getItem(TOKEN_KEY);
    }
@@ -24,6 +23,10 @@ $(function () {
          return {};
       }
    }
+   function doLogout() { 
+       removeJwtToken();
+       document.location = './login';
+   }
 
    function doLogin(loginData) {
             $.ajax({
@@ -33,23 +36,28 @@ $(function () {
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
                 success: function (data, textStatus, jqXHR) {
-                    console.log("id_token",data.id_token);
+                   //console.log("id_token",data.id_token);
                    setJwtToken(data.id_token);
-                   console.log(getJwtToken());
-                   document.location = './index.html';
+                   //console.log(getJwtToken());
+                   document.location = './default';
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
                    if (jqXHR.status === 401) {
-                       alert(jqXHR.status);
+                       var obj = JSON.parse(jqXHR.responseText);
+                       console.log(obj.message);
+                       $("#notify").show();
                    } else {
-                       alert("else");
+                       var obj = JSON.parse(jqXHR.responseText);
+                       document.getElementById("notify").innerHTML =obj.message ;
+                       $("#notify").show();
                    }
                 }
              });
    }
+   //
+   $("#notify").hide();
    //--------------request to login -----------
-  
-       if(getJwtToken()) {
+        if(getJwtToken()) {
             $.ajax({
                 url: "/api/me",
                 type: "GET",
@@ -57,13 +65,13 @@ $(function () {
                 dataType: "json",
                 headers: createAuthorizationTokenHeader(),
                 success: function (data, textStatus, jqXHR) {
-                   document.location = './index.html';
+                   document.location = './default';
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
                    if (jqXHR.status === 401) {
-                       alert("401 error");
+                       console.log(jqXHR.responseText);
                    } else {
-                       alert("else error");
+                       console.log(jqXHR.responseText);
 
                    }
                 }
@@ -74,16 +82,19 @@ $(function () {
 
      //---------login submit---------
       $("#loginForm").submit(function (event) {
-      event.preventDefault();
-      console.log("submit...");
+        event.preventDefault();
+        console.log("submit...");
 
-      var $form = $(this);
-      var formData = {
-         username: $form.find('input[name="username"]').val(),
-         password: $form.find('input[name="password"]').val()
-      };
-      console.log("inlogin:");
+        var $form = $(this);
+        var formData = {
+           username: $form.find('input[name="username"]').val(),
+           password: $form.find('input[name="password"]').val()
+        };
+        //console.log("inlogin:");
 
-      doLogin(formData);
-   });
+        doLogin(formData);
+       });
+       //--------logout---------
+       $logout.click(doLogout);
+       
 });

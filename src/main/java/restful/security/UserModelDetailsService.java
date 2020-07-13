@@ -35,8 +35,6 @@ public class UserModelDetailsService implements UserDetailsService {
    @Transactional
    public UserDetails loadUserByUsername(final String login) {
       log.debug("Authenticating user '{}'", login);
-      
-       System.out.println("logingggg");
 
       if (new EmailValidator().isValid(login, null)) {
          User user = userRepository.findByEmail(login);

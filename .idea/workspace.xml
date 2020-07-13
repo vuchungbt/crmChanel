@@ -1,24 +1,357 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be0d8c11-b933-42ca-a455-3129ce2e361c" name="Default Changelist" comment="" />
+    <list default="true" id="c5f103cd-a35d-4976-83c2-76b693efabc9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/restful/Controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_10_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_api_0_10_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_impl_0_10_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_jackson_0_10_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_12_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_12_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_18_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_3_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongo_java_driver_3_12_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_3_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_26.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_2_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_2_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_mongodb_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_2_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_2_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_2_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_2_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_2_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Spring_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbactions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbactions.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/restful/Reponsitories/ChannelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restful/Reponsitories/ChannelRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/restful/ServiceImp/ChannelServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restful/ServiceImp/ChannelServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/restful/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restful/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/restful/dto/ChannelDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restful/dto/ChannelDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/restful/entities/Channel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restful/entities/Channel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/restful/rest/AuthenticationRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restful/rest/AuthenticationRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/restful/rest/ChannelRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restful/rest/ChannelRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/restful/security/UserModelDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restful/security/UserModelDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/restful/security/rest/AdminProtectedRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restful/security/rest/AdminProtectedRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/restful/services/ChannelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restful/services/ChannelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/apps_calendar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/apps_chat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/apps_contacts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/apps_invoice.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/apps_mailbox.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/apps_notes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/apps_scrumboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/apps_todoList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/auth_lockscreen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/auth_lockscreen_boxed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/auth_login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/auth_login_boxed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/auth_pass_recovery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/auth_pass_recovery_boxed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/auth_register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/auth_register_boxed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/charts_apex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/component_accordion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/component_blockui.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/component_bootstrap_carousel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/component_cards.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/component_countdown.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/component_counter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/component_lightbox.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/component_list_group.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/component_media_object.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/component_modal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/component_pricing_table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/component_session_timeout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/component_snackbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/component_sweetalert.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/component_tabs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/component_timeline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/crm-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/crm-channel-profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/crm-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/dragndrop_dragula.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/element_alerts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/element_avatar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/element_badges.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/element_breadcrumbs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/element_buttons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/element_buttons_group.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/element_color_library.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/element_dropdown.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/element_infobox.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/element_jumbotron.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/element_loader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/element_pagination.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/element_popovers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/element_progress_bar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/element_search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/element_tooltips.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/element_treeview.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/element_typography.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fonticons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/form_bootstrap_basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/form_bootstrap_select.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/form_bootstrap_touchspin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/form_checkbox_radio.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/form_clipboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/form_date_range_picker.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/form_fileupload.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/form_input_group_basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/form_input_mask.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/form_layouts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/form_markdown.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/form_maxlength.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/form_quill.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/form_select2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/form_switches.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/form_typeahead.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/form_validation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/form_wizard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/crm-task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/map_jvector.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages_coming_soon.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages_contact_us.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages_error404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages_error500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages_error503.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages_faq.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages_faq2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages_helpdesk.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages_maintenence.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/pages_privacy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/starter_kit_blank_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/starter_kit_boxed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/starter_kit_collapsible_menu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/table_basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/table_dt_alternative_pagination.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/table_dt_basic-dark.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/table_dt_basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/table_dt_custom.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/table_dt_html5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/table_dt_live_dom_ordering.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/table_dt_miscellaneous.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/table_dt_multi-column_ordering.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/table_dt_multiple_tables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/table_dt_ordering_sorting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/table_dt_range_search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/user_account_setting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/user_profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/widgets.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/FirstDemoRest-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/FirstDemoRest-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/Reponsitories/ChannelRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/Reponsitories/ChannelRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/Reponsitories/TaskRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/Reponsitories/TaskRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/Reponsitories/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/Reponsitories/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/Reponsitories/WorkRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/Reponsitories/WorkRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/RestApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/RestApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/ServiceImp/ChannelServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/ServiceImp/ChannelServiceImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/ServiceImp/TaskServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/ServiceImp/TaskServiceImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/ServiceImp/UserServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/ServiceImp/UserServiceImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/ServiceImp/WorkServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/ServiceImp/WorkServiceImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/config/CorsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/config/CorsConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/config/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/dto/ChannelDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/dto/ChannelDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/dto/UserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/dto/UserDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/entities/Authority.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/entities/Authority.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/entities/Channel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/entities/Channel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/entities/HiddenMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/entities/HiddenMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/entities/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/entities/Task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/entities/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/entities/Work.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/entities/Work.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/rest/AuthenticationRestController$JWTToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/rest/AuthenticationRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/rest/AuthenticationRestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/rest/ChannelRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/rest/ChannelRestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/rest/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/rest/Home.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/security/JwtAccessDeniedHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/security/JwtAccessDeniedHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/security/JwtAuthenticationEntryPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/security/JwtAuthenticationEntryPoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/security/SecurityUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/security/SecurityUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/security/UserModelDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/security/UserModelDetailsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/security/UserNotActivatedException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/security/UserNotActivatedException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/security/jwt/JWTConfigurer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/security/jwt/JWTConfigurer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/security/jwt/JWTFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/security/jwt/JWTFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/security/jwt/TokenProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/security/jwt/TokenProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/security/rest/AdminProtectedRestController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/security/rest/AdminProtectedRestController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/security/rest/AdminProtectedRestController$HiddenMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/security/rest/AdminProtectedRestController$HiddenMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/security/rest/AdminProtectedRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/security/rest/AdminProtectedRestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/security/rest/TwoAccessController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/security/rest/TwoAccessController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/security/rest/UserRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/security/rest/UserRestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/security/securetyservices/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/security/securetyservices/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/services/ChannelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/services/ChannelService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/services/TaskService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/services/TaskService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/services/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restful/services/WorkService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restful/services/WorkService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/apps_calendar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/apps_chat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/apps_contacts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/apps_invoice.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/apps_mailbox.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/apps_notes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/apps_scrumboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/apps_todoList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/auth_lockscreen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/auth_lockscreen_boxed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/auth_login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/auth_login_boxed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/auth_pass_recovery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/auth_pass_recovery_boxed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/auth_register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/auth_register_boxed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/charts_apex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/component_accordion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/component_blockui.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/component_bootstrap_carousel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/component_cards.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/component_countdown.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/component_counter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/component_lightbox.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/component_list_group.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/component_media_object.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/component_modal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/component_pricing_table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/component_session_timeout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/component_snackbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/component_sweetalert.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/component_tabs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/component_timeline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/crm-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/crm-login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/dragndrop_dragula.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/element_alerts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/element_avatar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/element_badges.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/element_breadcrumbs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/element_buttons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/element_buttons_group.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/element_color_library.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/element_dropdown.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/element_infobox.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/element_jumbotron.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/element_loader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/element_pagination.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/element_popovers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/element_progress_bar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/element_search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/element_tooltips.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/element_treeview.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/element_typography.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/fonticons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/form_bootstrap_basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/form_bootstrap_select.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/form_bootstrap_touchspin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/form_checkbox_radio.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/form_clipboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/form_date_range_picker.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/form_fileupload.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/form_input_group_basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/form_input_mask.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/form_layouts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/form_markdown.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/form_maxlength.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/form_quill.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/form_select2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/form_switches.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/form_typeahead.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/form_validation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/form_wizard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/map_jvector.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pages_coming_soon.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pages_contact_us.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pages_error404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pages_error500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pages_error503.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pages_faq.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pages_faq2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pages_helpdesk.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pages_maintenence.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pages_privacy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/starter_kit_blank_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/starter_kit_boxed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/starter_kit_collapsible_menu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/table_basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/table_dt_alternative_pagination.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/table_dt_basic-dark.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/table_dt_basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/table_dt_custom.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/table_dt_html5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/table_dt_live_dom_ordering.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/table_dt_miscellaneous.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/table_dt_multi-column_ordering.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/table_dt_multiple_tables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/table_dt_ordering_sorting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/table_dt_range_search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/user_account_setting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/user_profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/widgets.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1eSbZ46gW9J6E9G1eWnAm1YD3Yy" />
+  <component name="ProjectId" id="1eXRqov6423BBYpcyBi8GtZVTwS" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -32,21 +365,42 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="RestApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="be0d8c11-b933-42ca-a455-3129ce2e361c" name="Default Changelist" comment="" />
-      <created>1594317993829</created>
+      <changelist id="c5f103cd-a35d-4976-83c2-76b693efabc9" name="Default Changelist" comment="" />
+      <created>1594466144727</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1594317993829</updated>
-      <workItem from="1594317994994" duration="150000" />
+      <updated>1594466144727</updated>
+      <workItem from="1594466146043" duration="186000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

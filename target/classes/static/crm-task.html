@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>Task</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
+    <link href="assets/css/loader.css" rel="stylesheet" type="text/css" />
+    <script src="assets/js/loader.js"></script>
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&amp;display=swap" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/plugins.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <link href="plugins/apex/apexcharts.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/dashboard/dash_1.css" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <link rel="stylesheet" type="text/css" href="assets/css/forms/theme-checkbox-radio.css">
+    <link href="assets/css/tables/table-basic.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="sidebar-noneoverflow">
+    <!-- BEGIN LOADER -->
+    <div id="load_screen"> <div class="loader"> <div class="loader-content">
+        <div class="spinner-grow align-self-center"></div>
+    </div></div></div>
+    <!--  END LOADER -->
+
+    <!--  BEGIN NAVBAR  -->
+     <div th:replace="fragment/header::div"></div>
+    <!--  END NAVBAR  -->
+
+    <!--  BEGIN MAIN CONTAINER  -->
+    <div class="main-container" id="container">
+
+        <div class="overlay"></div>
+        <div class="search-overlay"></div>
+
+        <!--  BEGIN SIDEBAR  -->
+        <div th:replace="fragment/menu::div"></div>
+        <!--  END SIDEBAR  -->
+        
+        <!--  BEGIN CONTENT AREA  -->
+        <div id="content" class="main-content">
+            <div class="layout-px-spacing" id="taskdetail">
+                    <div id="tableSimple" class="col-lg-12 col-12 layout-spacing">
+                            <div class="statbox  box box-shadow">
+                                <div class="widget-content widget-content-area">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered mb-4" >
+                                            <div id="tasktable">
+                                                <ul class="list-group" id="taskprofile">
+                                                    
+                                                </ul>
+                                            </div>
+                                            <thead>
+                                                <tr class="table-default"> 
+                                                    <th colspan="4"  > 
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-right" style="min-width: 150px"><strong> Status:</strong></td>
+                                                    <td class="text-left" id="tstatus" style="min-width: 100px" ></td>
+                                                    <td class="text-right"  style="min-width: 150px"><strong>Due date:</strong></td>
+                                                    <td class="text-left" id="tduedate" style="min-width: 100px" ></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-right"  style="min-width: 150px"><strong>Customer:</strong></td>
+                                                    <td class="text-left" id="tcustomer" style="min-width: 100px" ></td>
+                                                    <td class="text-right"  style="min-width: 150px"><strong>Close date:</strong></td>
+                                                    <td class="text-left" id="tclosedate" style="min-width: 100px"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-right"  style="min-width: 150px"><strong>Assign to:</strong></td>
+                                                    <td class="text-left" id="tassignto" style="min-width: 100px"></td>
+                                                    <td class="text-right"  style="min-width: 150px"><strong>Reason:</strong></td>
+                                                    <td class="text-left" id="treason" style="min-width: 100px"></td>
+                                                </tr>
+                                                <tr>
+                                                    <th colspan="4">
+                                                        Description:
+                                                        <textarea class="form-control mb-4" rows="3" id="tdesctiption"></textarea> 
+                                                    </th>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr class="table-default"> 
+                                                    <th colspan="4" class="text-center">
+                                                        <ul class="table-controls">
+                                                            
+                                                            <li>
+                                                                <button class="btn btn-outline-secondary mb-2">View Channel</button>
+                                                            </li>
+                                                            <li>
+                                                                <button class="btn btn-outline-primary mb-2 mr-2 btn-default">Edit 
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 text-success"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg>
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button class="btn btn-outline-info mb-2 mr-2">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2 text-danger"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </th>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                    </div>
+                    
+                    <div id="tableCheckbox" class="col-lg-12 col-12 layout-spacing">
+                        <div class="statbox box box-shadow">
+                            
+                            <div class="widget-content widget-content-area">
+                                <div class=" widget-header">
+                                    <div class="row">
+                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                            <h4>Task List</h4>
+                                        </div>                       
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-hover table-striped table-checkable table-highlight-head mb-4">
+                                        <thead>
+                                            <tr>
+                                                <th class="checkbox-column">
+                                                    <label class="new-control new-checkbox checkbox-primary" style="height: 18px; margin: 0 auto;">
+                                                        <input type="checkbox" class="new-control-input todochkbox" id="todoAll">
+                                                        <span class="new-control-indicator"></span>
+                                                    </label>
+                                                </th>
+                                                <th class="">ID</th>
+                                                <th class="">Name</th>
+                                                <th class="">Type</th>
+                                                <th class="">Status</th>
+                                                <th class="">Due date</th>
+                                                <th class="">Assign to</th>
+                                                <th class="text-center">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="taskBody">
+                                                                                        
+                                        </tbody>
+                                        <tfoot>
+                                                <tr class="table-primary"> 
+                                                    <th colspan="8" class="text-center">
+                                                        <ul class="table-controls">
+                                                            
+                                                            <li>
+                                                                <button type="button" class="btn btn-outline-primary mb-2 mr-2" data-toggle="modal" data-target=".bd-example-modal-lg">Add new</button>
+                                        
+                                                            </li>
+                                                            <li>
+                                                                <button class="btn btn-outline-danger mb-2">Change status</button>
+                                                            </li>
+                                                            <li>
+                                                                <button class="btn btn-outline-info mb-2 mr-2">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2 text-danger"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </th>
+                                                </tr>
+                                            </tfoot>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Modal Add new -->
+                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="myLargeModalLabel">Add new</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                 <form id="work-experience" class="section work-experience">
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="col-md-11 mx-auto">
+                                                    <div class="work-section">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="form-group">
+                                                                    <label for="degree2">Name</label>
+                                                                    <input type="text" class="form-control mb-4" name="name" placeholder="Add your work here" >
+                                                                </div>
+                                                                <input type="hidden" id="idchannelhiden" name="idchannelhiden" >
+                                                                
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <div class="row">
+                                                                    <div class="col-sm-6">
+                                                                        <div class="form-group">
+                                                                            <label for="type">Type</label>
+                                                                            <select class="form-control" name="type">
+                                                                                <option selected>Default</option>
+                                                                                  <option>Do some thing</option>
+                                                                                </select>
+                                                                             </div>
+                                                                    </div>
+                                                                    <div class="col-sm-6">
+                                                                        <label class="dob-input">Due date</label>
+                                                                        <div class="d-sm-flex d-block">
+                                                                            <div class="form-group mr-1">
+                                                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                                                    <option disabled>Day</option>
+                                                                                  <option>1</option>
+                                                                                  <option>2</option>
+                                                                                  <option>3</option>
+                                                                                  <option>4</option>
+                                                                                  <option>5</option>
+                                                                                  <option>6</option>
+                                                                                  <option>7</option>
+                                                                                  <option>8</option>
+                                                                                  <option>9</option>
+                                                                                  <option>10</option>
+                                                                                  <option>11</option>
+                                                                                  <option>12</option>
+                                                                                  <option>13</option>
+                                                                                  <option>14</option>
+                                                                                  <option>15</option>
+                                                                                  <option>16</option>
+                                                                                  <option>17</option>
+                                                                                  <option>18</option>
+                                                                                  <option>19</option>
+                                                                                  <option selected>20</option>
+                                                                                  <option>21</option>
+                                                                                  <option>22</option>
+                                                                                  <option>23</option>
+                                                                                  <option>24</option>
+                                                                                  <option>25</option>
+                                                                                  <option>26</option>
+                                                                                  <option>27</option>
+                                                                                  <option>28</option>
+                                                                                  <option>29</option>
+                                                                                  <option>30</option>
+                                                                                  <option>31</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div class="form-group mr-1">
+                                                                                <select class="form-control" id="month">
+                                                                                    <option disabled>Month</option>
+                                                                                    <option selected>Jan</option>
+                                                                                    <option>Feb</option>
+                                                                                    <option>Mar</option>
+                                                                                    <option>Apr</option>
+                                                                                    <option>May</option>
+                                                                                    <option>Jun</option>
+                                                                                    <option>Jul</option>
+                                                                                    <option>Aug</option>
+                                                                                    <option>Sep</option>
+                                                                                    <option>Oct</option>
+                                                                                    <option>Nov</option>
+                                                                                    <option>Dec</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div class="form-group mr-1">
+                                                                                <select class="form-control" id="year">
+                                                                                    <option disabled>Year</option>
+                                                                                    <option selected>2020</option>
+                                                                                  <option>2021</option>
+                                                                                  <option>2022</option>
+                                                                                  <option>2023</option>
+                                                                                  <option>2024</option>
+                                                                                  <option>2025</option>
+                                                                                  <option>2026</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>  
+                                                            <div class="col-md-12">
+                                                                <textarea class="form-control" name="des" placeholder="Description" rows="3"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="submit" data-dismiss="modal" class="btn btn-primary" id="save" >Save</button>
+                                        </div>
+                                    </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+
+            </div>
+            <div class="footer-wrapper">
+                <div class="footer-section f-section-1">
+                    <p class="">Copyright © 2020 <a target="_blank" href="https://designreset.com/">DesignReset</a>, All rights reserved.</p>
+                </div>
+                <div class="footer-section f-section-2">
+                    <p class="">Coded with <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></p>
+                </div>
+            </div>
+        </div>
+        <!--  END CONTENT AREA  -->
+
+
+    </div>
+    <!-- END MAIN CONTAINER -->
+
+    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+    <script src="assets/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+        $(document).ready(function() {
+            App.init();
+        });
+    </script>
+    <script src="assets/js/custom.js"></script>
+    <!-- END GLOBAL MANDATORY SCRIPTS -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+    <script src="plugins/apex/apexcharts.min.js"></script>
+    <script src="assets/js/dashboard/dash_1.js"></script>
+
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+</body>
+</html>
